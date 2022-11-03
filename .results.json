@@ -2,25 +2,25 @@
   "stats": {
     "suites": 6,
     "tests": 5,
-    "passes": 4,
+    "passes": 5,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-11-03T16:01:57.956Z",
-    "end": "2022-11-03T16:01:58.347Z",
-    "duration": 391
+    "failures": 0,
+    "start": "2022-11-03T18:16:14.392Z",
+    "end": "2022-11-03T18:16:15.263Z",
+    "duration": 871
   },
   "tests": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -41,45 +41,25 @@
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
-        "showDiff": true,
-        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
-        "expected": "Assignment to constant variable.",
-        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:471:21)"
-      }
+      "err": {}
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "unsuccessfully tries to reassign the least favorite customer",
-      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
-        "showDiff": true,
-        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
-        "expected": "Assignment to constant variable.",
-        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:471:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -94,6 +74,13 @@
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     }
